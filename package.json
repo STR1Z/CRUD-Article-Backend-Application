@@ -1,0 +1,30 @@
+{
+  "name": "article-reading-and-editing-app-backend",
+  "version": "1.0.0",
+  "description": "A simple backend for a web applications specialized for reading and editing articles. Made for relatively small organisations.",
+  "main": "app.js",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "dotenv": "^8.2.0",
+    "fastify": "^3.2.1",
+    "fastify-cors": "^4.1.0",
+    "fastify-rate-limit": "^4.0.2",
+    "mongodb": "^3.6.0",
+    "mongoose": "^5.10.0",
+    "node-fetch": "^2.6.0",
+    "saslprep": "^1.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "blank"
+  },
+  "keywords": [
+    "blank"
+  ],
+  "author": "Wei Heng Jiang",
+  "license": "ISC"
+}
