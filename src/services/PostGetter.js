@@ -18,6 +18,6 @@ module.exports = {
       if (arr.length == 0) throw Error("Invalid Post");
       return arr[0];
     }),
-  search: (page, size, match, tag, user) =>
-    fetchPost({ isDeleted: false, ...(match ? { title: { $regex: match, $options: "i" } } : {}), ...(user ? { user } : {}), ...(tag ? { tag } : {}) }, page, size),
+  search: (page, size, match, tag, author) =>
+    fetchPost({ isDeleted: false, ...(match ? { title: { $regex: match, $options: "i" } } : {}), ...(author ? { author } : {}), ...(tag ? { tag } : {}) }, page, size),
 };

@@ -12,7 +12,7 @@ module.exports = async (app) => {
           tag: {
             type: "string",
           },
-          user: {
+          author: {
             type: "string",
           },
           page: {
@@ -28,8 +28,8 @@ module.exports = async (app) => {
       },
     },
     async (req) => {
-      let { match = "", page = 0, size = 50, tag, user } = req.query;
-      return await services.PostGetter.search(page, size, match, tag, user);
+      let { match = "", page = 0, size = 50, tag, author } = req.query;
+      return await services.PostGetter.search(page, size, match, tag, author);
     }
   );
   app.get(
